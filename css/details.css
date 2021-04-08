@@ -1,0 +1,108 @@
+body {
+  height: 100vh;
+}
+.detailContainer {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, black, brown, lightgrey);
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 3px 20px lightgrey;
+}
+.coctailDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.cdText {
+  width: 40%;
+  text-align: center;
+}
+.cdName {
+  font-size: 64px;
+  padding: 20px;
+}
+.cdInstructions {
+  font-size: 30px;
+  padding: 20px;
+}
+.imageDiv {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cdImage {
+  border-radius: 20px;
+  margin: 20px;
+  height: 500px;
+}
+
+@media (max-width: 1800px) {
+  .cdName {
+    font-size: 44px;
+  }
+  .cdInstructions {
+    font-size: 24px;
+  }
+  .cdImage {
+    height: 300px;
+  }
+
+  .coctailDetails {
+    height: 100%;
+  }
+}
+@media (max-width: 1050px) {
+  .cdName {
+    font-size: 34px;
+  }
+  .cdInstructions {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .cdName {
+    font-size: 24px;
+    margin: 30px;
+  }
+  .cdInstructions {
+    font-size: 16px;
+  }
+  .cdImage {
+    height: 200px;
+  }
+}
+@media (max-width: 540px) {
+  header {
+    height: 30vh;
+  }
+  .cdText {
+    width: 70%;
+  }
+  .breadCrumbs {
+    display: none;
+  }
+  .cdImage {
+    display: none;
+  }
+  .logo {
+    margin: 20px;
+  }
+  body {
+    height: 130vh;
+  }
+  .logo {
+    position: relative;
+  }
+}
+@media (max-width: 320px) {
+  .cdName {
+    margin: 10px;
+  }
+  body {
+    height: 200vh;
+  }
+}

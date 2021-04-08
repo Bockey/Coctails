@@ -1,0 +1,139 @@
+body {
+  height: 100vh;
+}
+.form {
+  height: 80%;
+  width: 80%;
+}
+form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(90deg, black, brown, lightgrey);
+  border-radius: 20px;
+  box-shadow: 0px 3px 20px lightgrey;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 400px;
+  height: 40px;
+  outline: none;
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 18px 28px;
+  font-size: 24px;
+  color: lightgrey;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+}
+button:hover {
+  color: brown;
+  transition-property: color;
+  transition-duration: 0.4s;
+}
+.formError {
+  color: brown;
+  background-color: black;
+  padding: 3px;
+  font-weight: bold;
+  display: none;
+}
+.success {
+  height: 70%;
+  width: 50%;
+  margin-top: 7%;
+  background-color: lightgrey;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  display: none;
+}
+.success h2 {
+  background-color: green;
+  font-size: 30px;
+  margin: 25px;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+.success h3 {
+  color: black;
+  font-size: 24px;
+  margin: 25px;
+}
+.success p {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 25px;
+}
+.success div {
+  position: absolute;
+  color: black;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: context-menu;
+}
+.visibility {
+  display: flex;
+}
+@media (max-width: 700px) {
+  input {
+    width: 200px;
+  }
+  .breadCrumbs {
+    display: none;
+  }
+  .logo {
+    margin: 10px;
+    position: relative;
+  }
+  button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  label {
+    font-size: 16px;
+  }
+  .formError {
+    font-size: 14px;
+    text-align: center;
+    width: 95%;
+  }
+  .success {
+    width: 70%;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    height: 120vh;
+  }
+  header {
+    height: 30vh;
+  }
+  .success div {
+    top: 10px;
+    right: 10px;
+  }
+}

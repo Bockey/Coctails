@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: lightgrey;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  height: 15vh;
+}
+.logo {
+  color: brown;
+  display: flex;
+  font-size: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+h1 {
+  font-size: 44px;
+  margin: 60px;
+}
+.breadCrumbs {
+  font-size: 30px;
+  width: 80%;
+  margin-bottom: 20px;
+  display: flex;
+}
+.breadCrumbs section {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.breadCrumbs a {
+  opacity: 0.8;
+}
+.breadCrumbs a:hover {
+  color: brown;
+  transition-property: color;
+  transition-duration: 0.4s;
+}
+.contactUs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 65px;
+  font-size: 24px;
+  padding: 10px;
+}
+.contactUs:hover {
+  color: brown;
+  transition-property: color;
+  transition-duration: 0.4s;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+.coctail {
+  width: 400px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 40px;
+  background: linear-gradient(90deg, black, brown, lightgrey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 3px 20px lightgrey;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+.coctail:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.coctailImage {
+  height: 100px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.textInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+.name,
+.type {
+  padding: 10px;
+}
+.name {
+  font-size: 34px;
+  text-align: center;
+}
+.loader {
+  border: 16px solid lightgrey;
+  border-top: 16px solid darkred;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.catchError {
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  margin: 30px;
+}
+.visible {
+  display: none;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
