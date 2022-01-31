@@ -1,3 +1,3 @@
 # Coctails
 
--Practicing REST API - school project
+- Practicing REST API - school project
